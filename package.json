@@ -2,7 +2,10 @@
   "name": "lit-cards-grid",
   "main": "lit-cards-grid.js",
   "dependencies": {
-    "@polymer/polymer": "^3.0.0"
+    "@polymer/iron-icons": "^3.0.1",
+    "lit-button-styles": "git@github.com:lit-workshop/lit-button-style.git",
+    "lit-card": "git@github.com:lit-workshop/lit-card.git",
+    "lit-element": "^2.1.0"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",

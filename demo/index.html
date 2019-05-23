@@ -1,23 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
 
     <title>lit-cards-grid demo</title>
 
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
 
     <script type="module">
-      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
-      import '@polymer/iron-demo-helpers/demo-snippet';
+      import "@polymer/iron-demo-helpers/demo-pages-shared-styles";
+      import "@polymer/iron-demo-helpers/demo-snippet";
     </script>
 
     <script type="module" src="../lit-cards-grid.js"></script>
 
     <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-      </style>
+      <style is="custom-style" include="demo-pages-shared-styles"></style>
     </custom-style>
   </head>
   <body>
@@ -25,7 +27,222 @@
       <h3>Basic lit-cards-grid demo</h3>
       <demo-snippet>
         <template>
-          <lit-cards-grid></lit-cards-grid>
+          <lit-cards-grid id="grid"></lit-cards-grid>
+          <script>
+            let element = document.getElementById("grid");
+            let girdList = [
+              {
+                id: 0,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 1,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 2,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 3,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 4,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 5,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 6,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 7,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              },
+              {
+                id: 8,
+                title: "My card",
+                src: "https://via.placeholder.com/200.png",
+                description: `
+              Bacon ipsum dolor amet ut ham consectetur hamburger enim sunt. 
+              Hamburger meatball reprehenderit aute, esse ex boudin short loin shoulder pig ad. 
+              In enim flank lorem sausage do sed shankle anim kielbasa salami ad fugiat jowl. 
+              In eu consectetur brisket. Fatback bacon leberkas short loin pariatur turkey. 
+              Tenderloin occaecat dolor, laborum aliqua pork belly quis picanha alcatra. Ullamco 
+              corned beef swine, voluptate kielbasa fatback pork chop excepteur in incididunt qui.
+              `,
+                actions: [
+                  {
+                    title: "View",
+                    event: "view"
+                  },
+                  {
+                    title: "Remove",
+                    event: "remove"
+                  }
+                ]
+              }
+            ];
+
+            element.addEventListener('pag-event', (event) =>{ console.log(event); });
+            element.cards = girdList;
+          </script>
         </template>
       </demo-snippet>
     </div>
