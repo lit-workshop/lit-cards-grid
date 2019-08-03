@@ -57,6 +57,12 @@ class LitCardsGrid extends LitElement {
           grid-template-columns: 1fr 1fr 1fr;
         }
       }
+
+      @media (min-width: 1400px) {
+        .container {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
     `;
   }
 
