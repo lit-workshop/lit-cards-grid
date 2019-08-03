@@ -46,13 +46,13 @@ class LitCardsGrid extends LitElement {
         align-items: center;
       }
 
-      @media (min-width: 400px) {
+      @media (min-width: 600px) {
         .container {
           grid-template-columns: 1fr 1fr;
         }
       }
 
-      @media (min-width: 600px) {
+      @media (min-width: 850px) {
         .container {
           grid-template-columns: 1fr 1fr 1fr;
         }
